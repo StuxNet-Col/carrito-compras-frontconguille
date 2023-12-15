@@ -1,0 +1,51 @@
+/* Estilos para la tarjeta */
+.tarjeta {
+  display: flex; /* Utilizamos flexbox para el diseño */
+  border: 1px solid #ddd; /* Agregamos un borde delgado */
+  border-radius: 8px; /* Borde redondeado para un aspecto más suave */
+  overflow: hidden; /* Ocultamos cualquier contenido que se desborde */
+  margin-bottom: 20px; /* Espaciado inferior entre tarjetas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
+}
+
+.tarjeta-imagen {
+  width: 150px; /* Ancho fijo para la imagen */
+  height: 150px; /* Altura fija para la imagen */
+  object-fit: cover; /* Escalamos la imagen para cubrir el contenedor */
+  border-radius: 8px 0 0 8px; /* Esquinas redondeadas solo en la esquina izquierda */
+}
+
+.tarjeta-contenido {
+  flex: 1; /* El contenido ocupa el espacio restante en la tarjeta */
+  padding: 10px; /* Espaciado interno del contenido */
+}
+
+.tarjeta-titulo {
+  margin: 0; /* Eliminamos el margen superior del título */
+  font-size: 1.2em; /* Tamaño del texto del título */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.tarjeta-descripcion {
+  margin: 10px 0; /* Espaciado alrededor de la descripción */
+}
+
+.tarjeta-precio {
+  margin: 0; /* Eliminamos el margen superior del precio */
+  font-weight: bold; /* Texto en negrita para el precio */
+  color: #e44d26; /* Color del texto del precio (naranja como ejemplo) */
+}
+
+.boton-agregar, .boton-quitar {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  padding: 8px 12px; /* Espaciado interno del botón */
+  border-radius: 4px; /* Esquinas redondeadas del botón */
+  cursor: pointer; /* Cambiamos el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+.boton-agregar:hover, .boton-quitar:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón sobre el botón */
+}
